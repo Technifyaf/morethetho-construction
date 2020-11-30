@@ -13,23 +13,19 @@ const navItems = [
   {
     id: 2,
     link: '#!',
-    title: 'Advertise',
+    title: 'Facebook',
   },
   {
     id: 3,
     link: '#!',
-    title: 'Supports',
+    title: 'Instragram',
   },
   {
     id: 4,
     link: '#!',
-    title: 'Marketing',
+    title: 'Linked-in',
   },
-  {
-    id: 5,
-    link: '#!',
-    title: 'FAQ',
-  },
+ 
 ];
 
 export default function Footer() {
@@ -40,7 +36,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo white />
             <Text as="span">
-              All right reserved - Design &amp; Developed by RedQ, Inc
+               All right reserved - Design &amp; Developed by Tedchnify
             </Text>
           </Flex>
 

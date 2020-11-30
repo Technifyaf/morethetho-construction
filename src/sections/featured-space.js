@@ -6,9 +6,9 @@ import SectionHeading from 'components/section-heading';
 import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
-import expand from 'assets/images/icons/water-80.png';
-import users from 'assets/images/icons/construction-80.png';
-import wifi from 'assets/images/icons/carpenter-ruler-80.png';
+import expand from 'assets/images/icons/water-well.png';
+import users from 'assets/images/icons/drilling-rig.png';
+import wifi from 'assets/images/icons/water-pump.png';
 import slider1 from 'assets/images/features/1.png';
 import slider2 from 'assets/images/features/2.webp';
 import slider3 from 'assets/images/features/3.png';
@@ -24,20 +24,20 @@ const data = {
     {
       id: 1,
       icon: expand,
-      title: 'Drilling services',
-      description: 'Well, Borehole and Blastholde drilling.'
+      title: 'Water-well ',
+      description: 'Drilling and flashing.'
     },
     {
       id: 2,
       icon: users,
-      title: 'Construction',
-      description: 'Building contstruction, renovation and wiring',
+      title: 'Bororehole',
+      description: 'Surveying, casing, and yield casing',
     },
     {
       id: 3,
       icon: wifi,
-      title: 'Trade Works',
-      description: 'Paving, Welding and plumbing.',
+      title: ' Water Pump',
+      description: 'Installation and maintenance',
     },
   ],
   gallery: [

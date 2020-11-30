@@ -47,7 +47,6 @@ export default function Banner() {
             We have installed more than 30+ wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka, Quthing, Mokholtong and Leribe. 
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
-            <Input type="email" id="email" placeholder="Enter your email" styles ={styles.select} />
 
               <Button type="submit" sx={styles.button} variant="primary">
                Request quotation

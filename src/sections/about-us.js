@@ -4,9 +4,9 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
 import customer from 'assets/images/customer.png';
 
-const OurCustomer = () => {
+const AboutUS = () => {
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" sx={styles.section} id ="about-us">
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
@@ -15,8 +15,16 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than a hundred happy customers."
-              description="We have installed more than 30 + wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka and ."
+              title="About us"
+              description="Morethetho Construction is a professional company dedicated to providing high
+              quality drilling and construction services to companies, individuals and
+              organizations. Safety, environmental awareness and innovation are at the
+              forefront of all our business engagements. 
+
+              Our company recognizes the value of taking care of the environment in all
+              construction activities while making sure that we meet and exceed our customer
+              needs. We also put innovation and cost effectiveness in the forefront of all our
+              activities"
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
              
@@ -28,7 +36,7 @@ const OurCustomer = () => {
   );
 };
 
-export default OurCustomer;
+export default AboutUS;
 
 const styles = {
   section: {

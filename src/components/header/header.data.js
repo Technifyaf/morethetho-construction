@@ -3,22 +3,20 @@ export default [
     path: 'home',
     label: 'Home',
   },
-  {
-    path: 'clients',
-    label: 'Clients',
-  },
+
   {
     path: 'feature',
-    label: 'Feature',
+    label: 'Services',
+  },
+  {
+    path: 'about-us',
+    label: 'About us',
   },
   {
     path: 'gallery',
-    label: 'Gallery',
+    label: 'Portfolio',
   },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-  },
+
   {
     path: 'blog',
     label: 'Blog',

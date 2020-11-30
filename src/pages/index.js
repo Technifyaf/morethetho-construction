@@ -11,20 +11,21 @@ import Gallery from 'sections/gallery';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
+import AboutUS from 'sections/about-us';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Startup Landing 007" />
+        <SEO title="Morethetho Construction" />
         <Banner />
-        <Clients />
+     
         <FeaturedSpace />
+        <AboutUS/>
         <Gallery />
        
         <OurCustomer />
-        <Blog />
-        <Subscription />
+       
       </Layout>
     </ThemeProvider>
   );
