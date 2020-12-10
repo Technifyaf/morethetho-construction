@@ -3,6 +3,7 @@ import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
 import customer from 'assets/images/customer.png';
+import { FaAngleRight } from 'react-icons/fa';
 
 const AboutUS = () => {
   return (
@@ -16,18 +17,14 @@ const AboutUS = () => {
             <SectionHeading
               sx={styles.heading}
               title="About us"
-              description="Morethetho Construction is a professional company dedicated to providing high
-              quality drilling and construction services to companies, individuals and
-              organizations. Safety, environmental awareness and innovation are at the
-              forefront of all our business engagements. 
-
-              Our company recognizes the value of taking care of the environment in all
-              construction activities while making sure that we meet and exceed our customer
-              needs. We also put innovation and cost effectiveness in the forefront of all our
-              activities"
+              description="Morethetho Construction was established in 2009 as a general construction
+              company in Lesotho. We diversified our business focus to underground Drilling in
+              2014 and therefore registered as a drilling contractor accredited by the
+              Department of Water Affairs in Lesotho. "
             />
+           
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-             
+            <Link path ="#" sx={styles.link}>Learn more <FaAngleRight /></Link>
             </Box>
           </Box>
         </Flex>
@@ -77,6 +74,13 @@ const styles = {
     },
   },
   link: {
+    color: 'primary',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    pl: ['30px', null, null, '4px', null, '4px'],
+    mt: ['5px', null, null, null, '10px'],
     svg: {
       transition: 'margin-left 0.3s ease-in-out 0s',
     },

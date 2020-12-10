@@ -25,7 +25,7 @@ export default function IndexPage() {
         <Gallery />
        
         <OurCustomer />
-       
+       <Blog/>
       </Layout>
     </ThemeProvider>
   );

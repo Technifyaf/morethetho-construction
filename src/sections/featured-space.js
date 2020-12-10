@@ -13,6 +13,8 @@ import slider1 from 'assets/images/features/1.png';
 import slider2 from 'assets/images/features/2.webp';
 import slider3 from 'assets/images/features/3.png';
 
+
+
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,19 +26,37 @@ const data = {
     {
       id: 1,
       icon: expand,
-      title: 'Water-well ',
+      title: 'Borehole Survey',
+      description: 'Drilling and flashing.'
+    },
+    {
+      id: 1,
+      icon: expand,
+      title: 'Borehole drilling',
       description: 'Drilling and flashing.'
     },
     {
       id: 2,
       icon: users,
-      title: 'Bororehole',
+      title: 'Bororehole flashing',
       description: 'Surveying, casing, and yield casing',
     },
     {
       id: 3,
       icon: wifi,
-      title: ' Water Pump',
+      title: ' Borehole casing',
+      description: 'Installation and maintenance',
+    },
+    {
+      id: 3,
+      icon: wifi,
+      title: ' Borehole yield testing',
+      description: 'Installation and maintenance',
+    },
+    {
+      id: 3,
+      icon: wifi,
+      title: ' Pumping installation',
       description: 'Installation and maintenance',
     },
   ],
@@ -116,6 +136,7 @@ const FeaturedSpace = () => {
               {data?.feature?.map((feature) => (
                 <Feature key={feature.id} data={feature} />
               ))}
+           
             </Box>
           </Box>
           <Box sx={styles.rightContent}>
@@ -142,6 +163,7 @@ const FeaturedSpace = () => {
                         <Heading as="h4">{item.title}</Heading>
                         <Text as="p">{item.desc}</Text>
                       </Box>
+                  
                     </Box>
                   </Box>
                 </SwiperSlide>
@@ -273,5 +295,6 @@ const styles = {
         marginTop: [2],
       },
     },
+   
   },
 };

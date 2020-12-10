@@ -15,7 +15,7 @@ const data = [
     thumb: thumb1,
     commentCount: 22,
     link: '#!',
-    title: `Lesotho's ument water needs`,
+    title: `The advantages of a borehole over using municipal water`,
   },
   {
     id: 2,

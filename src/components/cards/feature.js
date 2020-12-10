@@ -2,6 +2,8 @@
 import { rgba } from 'polished';
 import Image from 'components/image';
 import { jsx, Box, Heading, Text } from 'theme-ui';
+import { Link } from 'components/link';
+import { FaAngleRight } from 'react-icons/fa';
 
 const Feature = ({ data: feature }) => {
   return (
@@ -9,6 +11,8 @@ const Feature = ({ data: feature }) => {
       <Image loading="lazy" src={feature.icon} alt={feature.title} />
       <Heading as="h3">{feature.title}</Heading>
       <Text as="p">{feature.description}</Text>
+      <Link path ="" sx={styles.link}> Learn more <FaAngleRight /></Link>
+          
     </Box>
   );
 };
@@ -28,6 +32,19 @@ const styles = {
       color: rgba('#343D48', 0.75),
       fontSize: [null, null, null, null, 14, 15],
       lineHeight: 1.47,
+    },
+  },
+  link: {
+    color: 'primary',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    pl: ['30px', null, null, '4px', null, '4px'],
+    mt: ['5px', null, null, null, '10px'],
+    svg: {
+      position: 'relative',
+      top: '3px',
     },
   },
 };

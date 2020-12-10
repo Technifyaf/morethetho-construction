@@ -41,7 +41,7 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h" sx={styles.heroTitle}>
-             We go and high and low, literally.
+            Over 5 years of borehole drilling excellenceçç
             </Heading>
             <Text as="p" sx={styles.desc}>
             We have installed more than 30+ wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka, Quthing, Mokholtong and Leribe. 
