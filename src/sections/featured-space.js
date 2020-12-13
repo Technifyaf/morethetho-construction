@@ -9,9 +9,9 @@ import Image from 'components/image';
 import expand from 'assets/images/icons/water-well.png';
 import users from 'assets/images/icons/drilling-rig.png';
 import wifi from 'assets/images/icons/water-pump.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.webp';
-import slider3 from 'assets/images/features/3.png';
+import slider1 from 'assets/images/features/1.jpg';
+import slider2 from 'assets/images/features/2.jpg';
+import slider3 from 'assets/images/features/3.jpg';
 
 
 
@@ -38,7 +38,7 @@ const data = {
     {
       id: 2,
       icon: users,
-      title: 'Bororehole flashing',
+      title: 'Borehole flashing',
       description: 'Surveying, casing, and yield casing',
     },
     {
@@ -65,19 +65,19 @@ const data = {
       id: 1,
       image: slider1,
       title: 'Drilling ',
-      desc: 'Water - well, borehole and blast drilling',
+      desc: 'Borehole and blast drilling',
     },
     {
       id: 2,
       image: slider2,
-      title: 'Construction',
-      desc: 'Building construction and renovation',
+      title: 'Surveying and casing',
+      desc: 'Borehole and yield casing',
     },
     {
       id: 3,
       image: slider3,
-      title: 'Tradework',
-      desc: '212 Broadway, Houston',
+      title: 'Water pump ',
+      desc: 'Installation and maintenance',
     },
   ],
 };
@@ -157,7 +157,7 @@ const FeaturedSpace = () => {
               {data?.gallery?.map((item) => (
                 <SwiperSlide key={item.id}>
                   <Box as="figure" sx={styles.image}>
-                    <Image loading="lazy" src={item.image} alt="" />
+                    <Image loading="lazy" src={item.image}   alt="" />
                     <Box as="figcaption">
                       <Box>
                         <Heading as="h4">{item.title}</Heading>

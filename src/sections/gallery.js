@@ -5,44 +5,45 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 
-import gallery1 from 'assets/images/gallery/well.jpg';
-import gallery2 from 'assets/images/gallery/capentry.jpg';
-import gallery3 from 'assets/images/gallery/beast.jpg';
-import gallery4 from 'assets/images/gallery/under-construction.jpg';
-import gallery5 from 'assets/images/gallery/welding.jpg';
-import gallery6 from 'assets/images/gallery/pump.jpg';
+import gallery1 from 'assets/images/gallery/morethetho_gallery_1.jpg';
+import gallery2 from 'assets/images/gallery/morethetho_gallery.jpg';
+import gallery3 from 'assets/images/gallery/morethetho_gallery_2.jpg';
+import gallery4 from 'assets/images/gallery/morethetho_gallery_3.jpg';
+import gallery5 from 'assets/images/gallery/morethetho_slider_2.jpg';
+import gallery6 from 'assets/images/gallery/morethetho_gallery_6.jpg';
 
 const data = [
   {
     id: 1,
     image: gallery1,
-    title: 'Maseru Pumps',
+    title: '',
   },
   {
     id: 2,
     image: gallery2,
-    title: 'Mohale fresh produce',
+    title: '',
   },
   {
     id: 3,
     image: gallery3,
-    title: 'NIVIST Civils and projects',
+    title: '',
   },
   {
     id: 4,
     image: gallery4,
-    title: 'Green Paradise',
+    title: '',
   },
   {
     id: 6,
     image: gallery6,
-    title: 'Berea Primary',
+    title: '',
   },
   {
     id: 5,
     image: gallery5,
-    title: 'Qing Jian group',
+    title: '',
   },
+  
 ];
 
 const masonryOptions = {
@@ -55,8 +56,8 @@ const Gallery = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan="Completed projects"
-          title="Take a look at some of our completed projects"
+          slogan="Gallery"
+          title="Take a look at our gallery"
         />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (

@@ -55,7 +55,7 @@ export default function Header() {
                   ))}
                 </Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
-                  Contact us
+                Request quotation
                 </Button>
               </Flex>
 

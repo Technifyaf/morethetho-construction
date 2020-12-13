@@ -3,7 +3,7 @@ import { jsx, Box, Container, Heading, Text, Button, Input } from 'theme-ui';
 import { rgba } from 'polished';
 
 import Select from 'components/select';
-import bannerBg from 'assets/images/morethetho.jpg';
+import bannerBg from 'assets/images/morethetho_banner.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
 
 const options = [
@@ -41,7 +41,7 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h" sx={styles.heroTitle}>
-            Over 5 years of borehole drilling excellenceçç
+            Over 5 years of borehole drilling excellence
             </Heading>
             <Text as="p" sx={styles.desc}>
             We have installed more than 30+ wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka, Quthing, Mokholtong and Leribe. 

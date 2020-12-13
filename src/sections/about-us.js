@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/customer.png';
+import customer from 'assets/images/morethetho_about_us_2.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const AboutUS = () => {

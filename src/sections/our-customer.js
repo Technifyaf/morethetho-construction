@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/customer.png';
+import customer from 'assets/images/features/2.jpg';
 
 const OurCustomer = () => {
   return (
@@ -10,7 +10,7 @@ const OurCustomer = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" />
+            <Image loading="lazy" src={customer} alt="customer" width="500" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
