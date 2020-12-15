@@ -12,7 +12,7 @@ const navItems = [
   },
   {
     id: 2,
-    link: '#!',
+    link: 'https://web.facebook.com/Morethethoborehole',
     title: 'Facebook',
   },
   {
@@ -36,14 +36,14 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo white />
             <Text as="span">
-               All right reserved - Design &amp; Developed by Tedchnify
+               All right reserved - Design &amp; Developed by Technify
             </Text>
           </Flex>
 
           <Flex as="ul" sx={styles.nav}>
             {navItems?.map((item) => (
               <li key={item.id}>
-                <Link path={item.link}>{item.title}</Link>
+                <a href ={item.link}>{item.title}</a>
               </li>
             ))}
           </Flex>

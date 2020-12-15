@@ -46,12 +46,16 @@ export default function Banner() {
             <Text as="p" sx={styles.desc}>
             We have installed more than 30+ wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka, Quthing, Mokholtong and Leribe. 
             </Text>
-            <Box as="form" onSubmit={handleSubmit}>
-
-              <Button type="submit" sx={styles.button} variant="primary">
-               Request quotation
-              </Button>
-            </Box>
+         
+              <a
+						href='https://forms.gle/a4zRnRWchcUZaEG88'
+						ml={2}
+						sx={styles.button}
+						variant='buttons.primary'
+					>
+					 <Button sx={styles.button}>Request quotation</Button>
+					</a>
+      
           </Box>
         </Box>
       </Container>
@@ -133,6 +137,7 @@ const styles = {
   
   button: {
     fontSize: 20,
+    textDecoration : 'none',
     fontWeight: 700,
     marginTop: 20,
     width: '100%',

@@ -54,9 +54,17 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
-                Request quotation
-                </Button>
+       
+          <a
+						href='https://forms.gle/a4zRnRWchcUZaEG88'
+						ml={2}
+						label='Get Technified'
+						sx={styles.joinNow}
+						variant='buttons.primary'
+					>
+					 <Button sx={styles.joinNow}>Request quotation</Button>
+					</a>
+           
               </Flex>
 
               {mobileMenu ? (
@@ -154,6 +162,8 @@ const styles = {
   },
   joinNow: {
     marginLeft: 'auto',
+    textDecoration: 'none'
+  
   },
   closeButton: {
     height: '32px',

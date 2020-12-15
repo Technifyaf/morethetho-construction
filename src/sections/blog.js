@@ -14,7 +14,7 @@ const data = [
     id: 1,
     thumb: thumb1,
     commentCount: 22,
-    link: '#!',
+    link: 'https://technifyafrica.medium.com/our-work-in-lesotho-7d29c3a73f7c',
     title: `The advantages of a borehole over using municipal water`,
   },
   {

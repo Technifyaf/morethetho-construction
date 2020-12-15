@@ -11,7 +11,15 @@ const Feature = ({ data: feature }) => {
       <Image loading="lazy" src={feature.icon} alt={feature.title} />
       <Heading as="h3">{feature.title}</Heading>
       <Text as="p">{feature.description}</Text>
-      <Link path ="" sx={styles.link}> Learn more <FaAngleRight /></Link>
+      <a
+						href='https://forms.gle/a4zRnRWchcUZaEG88'
+						ml={2}
+						label='Get Technified'
+						sx={styles.link}
+						variant='buttons.primary'
+					>
+			Learn more <FaAngleRight/>
+					</a>
           
     </Box>
   );
@@ -36,6 +44,7 @@ const styles = {
   },
   link: {
     color: 'primary',
+    textDecoration : 'none',
     fontSize: [1, null, 2],
     display: 'inline-block',
     verticalAlign: 'middle',

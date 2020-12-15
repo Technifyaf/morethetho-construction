@@ -12,7 +12,7 @@ const BlogPost = ({ post }) => {
       </Flex>
       <Box sx={styles.meta}>
         <Heading as="h4">
-          <Link path={post.link}>{post?.title}</Link>
+          <a href={post.link}>{post?.title}</a>
         </Heading>
         
       </Box>

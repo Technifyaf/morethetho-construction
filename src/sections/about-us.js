@@ -24,7 +24,14 @@ const AboutUS = () => {
             />
            
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-            <Link path ="#" sx={styles.link}>Learn more <FaAngleRight /></Link>
+            <a
+						href='https://forms.gle/a4zRnRWchcUZaEG88'
+						ml={2}
+						sx={styles.link}
+						variant='buttons.primary'
+					>
+			Learn more <FaAngleRight/>
+					</a>
             </Box>
           </Box>
         </Flex>
@@ -75,6 +82,7 @@ const styles = {
   },
   link: {
     color: 'primary',
+    textDecoration : 'none',
     fontSize: [1, null, 2],
     display: 'inline-block',
     verticalAlign: 'middle',

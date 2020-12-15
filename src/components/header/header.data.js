@@ -14,7 +14,7 @@ export default [
   },
   {
     path: 'gallery',
-    label: 'Portfolio',
+    label: 'Gallery',
   },
 
   {
