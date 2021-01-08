@@ -12,6 +12,7 @@ import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import AboutUS from 'sections/about-us';
+import ContactUS from 'sections/contact-us';
 
 export default function IndexPage() {
   return (
@@ -25,7 +26,9 @@ export default function IndexPage() {
         <Gallery />
        
         <OurCustomer />
-       <Blog/>
+        <Clients/>
+     
+       <ContactUS/>
       </Layout>
     </ThemeProvider>
   );

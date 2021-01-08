@@ -6,9 +6,12 @@ import SectionHeading from 'components/section-heading';
 import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
-import expand from 'assets/images/icons/water-well.png';
-import users from 'assets/images/icons/drilling-rig.png';
-import wifi from 'assets/images/icons/water-pump.png';
+import drilling from 'assets/images/gallery/morethetho_gallery_1.jpg';
+import survey from 'assets/images/gallery/morethetho_gallery_6.jpg';
+import casing from 'assets/images/gallery/casing_2.jpg';
+import flashing from 'assets/images/gallery/flushing.jpg';
+import testing from 'assets/images/gallery/casing.jpg'
+import water from 'assets/images/gallery/water_pump.jpg';
 import slider1 from 'assets/images/features/1.jpg';
 import slider2 from 'assets/images/features/2.jpg';
 import slider3 from 'assets/images/features/3.jpg';
@@ -25,38 +28,38 @@ const data = {
   feature: [
     {
       id: 1,
-      icon: expand,
+      icon: survey,
       title: 'Borehole Survey',
       description: 'Drilling and flashing.'
     },
     {
       id: 1,
-      icon: expand,
+      icon: drilling,
       title: 'Borehole drilling',
       description: 'Drilling and flashing.'
     },
     {
       id: 2,
-      icon: users,
+      icon: flashing,
       title: 'Borehole flashing',
       description: 'Surveying, casing, and yield casing',
     },
     {
       id: 3,
-      icon: wifi,
+      icon: casing,
       title: ' Borehole casing',
       description: 'Installation and maintenance',
     },
     {
-      id: 3,
-      icon: wifi,
+      id: 4,
+      icon: testing,
       title: ' Borehole yield testing',
       description: 'Installation and maintenance',
     },
     {
-      id: 3,
-      icon: wifi,
-      title: ' Pumping installation',
+      id: 5,
+      icon: water,
+      title: 'Water pump',
       description: 'Installation and maintenance',
     },
   ],
@@ -126,7 +129,7 @@ const FeaturedSpace = () => {
     <Box id="feature" as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.leftContent}>
+     
             <SectionHeading
               sx={styles.heading}
               title="Our services"
@@ -138,38 +141,8 @@ const FeaturedSpace = () => {
               ))}
            
             </Box>
-          </Box>
-          <Box sx={styles.rightContent}>
-            <Progressbar
-              sx={styles.progressbar}
-              togglePlay={togglePlay}
-              handleClick={handleToggle}
-              currentWidth={currentWidth}
-            />
-            <Swiper
-              loop={true}
-              effect="fade"
-              ref={swiperRef}
-              spaceBetween={0}
-              slidesPerView={1}
-              pagination={true}
-            >
-              {data?.gallery?.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <Box as="figure" sx={styles.image}>
-                    <Image loading="lazy" src={item.image}   alt="" />
-                    <Box as="figcaption">
-                      <Box>
-                        <Heading as="h4">{item.title}</Heading>
-                        <Text as="p">{item.desc}</Text>
-                      </Box>
-                  
-                    </Box>
-                  </Box>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Box>
+y
+        
         </Box>
       </Container>
     </Box>
@@ -188,7 +161,7 @@ const styles = {
     display: ['flex', null, null, null, 'grid'],
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
-    gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+    gridTemplateColumns: ['unset', null, null, null, 'repeat(1,1fr)'],
   },
   leftContent: {
     m: [0, '30px 0px 0', '30px 50px 0', 0],

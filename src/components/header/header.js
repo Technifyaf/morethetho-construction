@@ -90,7 +90,7 @@ const styles = {
     backgroundColor: 'transparent',
     '.is-sticky': {
       header: {
-        backgroundColor: '#fff',
+        backgroundColor: '#E7B807',
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [10],
       },
@@ -114,7 +114,7 @@ const styles = {
       '.navbar': {
         position: 'absolute',
         top: '100%',
-        backgroundColor: '#fff',
+        backgroundColor: '#343D48',
         width: '100%',
         left: 0,
         p: '20px 30px',
@@ -157,7 +157,7 @@ const styles = {
       margin: '0 20px',
     },
     '.active': {
-      color: 'primary',
+      color: 'white',
     },
   },
   joinNow: {

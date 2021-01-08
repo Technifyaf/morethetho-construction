@@ -3,6 +3,7 @@ import { jsx, Box, Flex, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import { rgba } from 'polished';
 import chat from 'assets/images/icons/chat.png';
+import { FaAngleRight } from 'react-icons/fa';
 
 const BlogPost = ({ post }) => {
   return (
@@ -14,6 +15,15 @@ const BlogPost = ({ post }) => {
         <Heading as="h4">
           <a href={post.link}>{post?.title}</a>
         </Heading>
+        <a
+						href={post.link}
+						ml={2}
+						label='Get Technified'
+						sx={styles.link}
+						variant='buttons.primary'
+					>
+			Read more <FaAngleRight/>
+					</a>
         
       </Box>
     </Box>
@@ -50,6 +60,24 @@ const styles = {
     color: rgba('#343D48', 0.8),
     img: {
       mr: '8px',
+    },
+  },
+  link: {
+    color: 'primary',
+    textDecoration : 'none',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    pl: ['30px', null, null, '4px', null, '4px'],
+    mt: ['5px', null, null, null, '10px'],
+    svg: {
+      transition: 'margin-left 0.3s ease-in-out 0s',
+    },
+    ':hover': {
+      svg: {
+        ml: '5px',
+      },
     },
   },
 };

@@ -30,11 +30,7 @@ const clients = [
     name: 'Quthing',
     logo: microsoft,
   },
-  {
-    id: 5,
-    name: 'Leribe',
-   
-  },
+
 ];
 
 function SlickArrow({ className, onClick, control }) {
@@ -97,15 +93,14 @@ const Clients = () => {
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Meet Our Clients"
-          title="We have compeleted projects the multiple districts"
+          slogan="Meet our clients"
+          title="We have served a number of high profile clients"
         />
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>
-               <Text as="p" sx={styles.desc}>
-                {client.name}
-            </Text>
+              <Image src={client.logo} width="100" alt="startup landing logo" />
+
             </Box>
           ))}
         </Slider>

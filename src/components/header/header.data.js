@@ -16,9 +16,12 @@ export default [
     path: 'gallery',
     label: 'Gallery',
   },
-
   {
-    path: 'blog',
-    label: 'Blog',
+    path: 'clients',
+    label: 'Clients',
+  },
+  {
+    path: 'contact',
+    label: 'Contact',
   },
 ];
