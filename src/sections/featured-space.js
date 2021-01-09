@@ -129,7 +129,7 @@ const FeaturedSpace = () => {
     <Box id="feature" as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-     
+          <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
               title="Our services"
@@ -141,8 +141,38 @@ const FeaturedSpace = () => {
               ))}
            
             </Box>
-y
-        
+          </Box>
+          <Box sx={styles.rightContent}>
+            <Progressbar
+              sx={styles.progressbar}
+              togglePlay={togglePlay}
+              handleClick={handleToggle}
+              currentWidth={currentWidth}
+            />
+            <Swiper
+              loop={true}
+              effect="fade"
+              ref={swiperRef}
+              spaceBetween={0}
+              slidesPerView={1}
+              pagination={true}
+            >
+              {data?.gallery?.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <Box as="figure" sx={styles.image}>
+                    <Image loading="lazy" src={item.image}  alt="" />
+                    <Box as="figcaption">
+                      <Box>
+                        <Heading as="h4">{item.title}</Heading>
+                        <Text as="p">{item.desc}</Text>
+                      </Box>
+                  
+                    </Box>
+                  </Box>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Box>
         </Box>
       </Container>
     </Box>
@@ -161,7 +191,7 @@ const styles = {
     display: ['flex', null, null, null, 'grid'],
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
-    gridTemplateColumns: ['unset', null, null, null, 'repeat(1,1fr)'],
+    gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
   },
   leftContent: {
     m: [0, '30px 0px 0', '30px 50px 0', 0],
@@ -238,6 +268,7 @@ const styles = {
     },
   },
   image: {
+
     position: 'relative',
     display: 'flex',
     alignItems: 'flex-start',

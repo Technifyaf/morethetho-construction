@@ -41,6 +41,16 @@ const styles = {
       fontSize: [null, null, null, null, 14, 15],
       lineHeight: 1.47,
     },
+    img: {
+      borderRadius: 5,
+      transform: 'scale(1)',
+      transition: 'all 0.3s ease-in-out 0s',
+    },
+    ':hover': {
+      img: {
+        transform: 'scale(1.2)',
+      },
+    },
   },
   link: {
     color: 'primary',

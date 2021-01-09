@@ -114,7 +114,7 @@ const styles = {
       '.navbar': {
         position: 'absolute',
         top: '100%',
-        backgroundColor: '#343D48',
+        backgroundColor: '#E7B807',
         width: '100%',
         left: 0,
         p: '20px 30px',
