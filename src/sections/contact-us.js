@@ -20,7 +20,7 @@ const ContactUS = () => {
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
             <Text as="p" sx={styles.desc}>
-           <ul> Phone :  (+266) 53094658 </ul>
+           <ul> Phone :  (+266)  58395014/63211226 </ul>
            <ul>Address : Ha Foso, </ul>
            <ul>Email : sales@morethetho.co.ls</ul>
             </Text>
