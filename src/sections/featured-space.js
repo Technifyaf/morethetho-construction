@@ -29,38 +29,49 @@ const data = {
     {
       id: 1,
       icon: survey,
-      title: 'Borehole Survey',
-      description: 'Drilling and flashing.'
+      title: 'Surveying',
+      description: 'Drilling and flashing.',
+      path : '/services/surveying'
     },
     {
       id: 1,
       icon: drilling,
-      title: 'Borehole drilling',
-      description: 'Drilling and flashing.'
+      title: 'Drilling',
+      description: 'Drilling and flashing.',
+      path : '/services/drilling'
+
     },
     {
       id: 2,
       icon: flashing,
-      title: 'Borehole flashing',
+      title: 'Flushing',
       description: 'Surveying, casing, and yield casing',
+      path : '/services/flushing'
+
     },
     {
       id: 3,
       icon: casing,
-      title: ' Borehole casing',
+      title: ' Casing',
       description: 'Installation and maintenance',
+      path : '/services/casing'
+
     },
     {
       id: 4,
       icon: testing,
-      title: ' Borehole yield testing',
+      title: 'Yield testing',
       description: 'Installation and maintenance',
+      path : '/services/yielding'
+
     },
     {
       id: 5,
       icon: water,
       title: 'Water pump',
       description: 'Installation and maintenance',
+      path : '/services/pump'
+
     },
   ],
   gallery: [
@@ -129,7 +140,7 @@ const FeaturedSpace = () => {
     <Box id="feature" as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.leftContent}>
+          <Box >
             <SectionHeading
               sx={styles.heading}
               title="Our services"
@@ -142,37 +153,7 @@ const FeaturedSpace = () => {
            
             </Box>
           </Box>
-          <Box sx={styles.rightContent}>
-            <Progressbar
-              sx={styles.progressbar}
-              togglePlay={togglePlay}
-              handleClick={handleToggle}
-              currentWidth={currentWidth}
-            />
-            <Swiper
-              loop={true}
-              effect="fade"
-              ref={swiperRef}
-              spaceBetween={0}
-              slidesPerView={1}
-              pagination={true}
-            >
-              {data?.gallery?.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <Box as="figure" sx={styles.image}>
-                    <Image loading="lazy" src={item.image}  alt="" />
-                    <Box as="figcaption">
-                      <Box>
-                        <Heading as="h4">{item.title}</Heading>
-                        <Text as="p">{item.desc}</Text>
-                      </Box>
-                  
-                    </Box>
-                  </Box>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Box>
+         
         </Box>
       </Container>
     </Box>
@@ -191,7 +172,7 @@ const styles = {
     display: ['flex', null, null, null, 'grid'],
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
-    gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+    gridTemplateColumns: ['unset', null, null, null, 'repeat1,fr)'],
   },
   leftContent: {
     m: [0, '30px 0px 0', '30px 50px 0', 0],

@@ -3,7 +3,7 @@ import { jsx, Box, Button, Container, Image, Text } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
-import mgc from 'assets/images/clients/mgc.png';
+import uber from 'assets/images/clients/uber.png';
 import google from 'assets/images/clients/google.png';
 import paypal from 'assets/images/clients/paypal.png';
 import microsoft from 'assets/images/clients/microsoft.png';
@@ -13,7 +13,7 @@ const clients = [
   {
     id: 1,
     name: 'Maseru',
-    logo: mgc,
+    logo: uber,
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ function SlickArrow({ className, onClick, control }) {
   );
 }
 
-const Clients = () => {
+const Quote = () => {
   const settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -93,23 +93,25 @@ const Clients = () => {
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Meet our clients"
-          title="We have served a number of high profile clients"
+          slogan="Get started"
+          title="Get a quotation and start drilling"
         />
-        <Slider sx={styles.clients} {...settings}>
-          {clients?.map((client) => (
-            <Box key={client.id} as="figure" sx={styles.logo}>
-              <Image src={client.logo} width ="150" alt="startup landing logo" />
-
-            </Box>
-          ))}
-        </Slider>
+        <a
+			href='https://forms.gle/a4zRnRWchcUZaEG88'
+		
+			label='Get Technified'
+            sx={styles.clients}
+			variant='buttons.primary'
+			>
+		 <Button >Request quotation</Button>
+		</a>
+      
       </Container>
     </Box>
   );
 };
 
-export default Clients;
+export default Quote;
 
 const styles = {
   section: {
@@ -167,6 +169,24 @@ const styles = {
     '&.slick-next': {
       transform: 'translateX(50%)',
       right: 'calc(50% - 16px)',
+    },
+  },
+  link: {
+    color: 'primary',
+    textDecoration : 'none',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    pl: ['30px', null, null, '4px', null, '4px'],
+    mt: ['5px', null, null, null, '10px'],
+    svg: {
+      transition: 'margin-left 0.3s ease-in-out 0s',
+    },
+    ':hover': {
+      svg: {
+        ml: '5px',
+      },
     },
   },
 };

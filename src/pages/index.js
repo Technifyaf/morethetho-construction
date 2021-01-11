@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
-import Layout from 'components/layout';
+import Layout from 'components/layouts/layout';
 import Banner from 'sections/banner';
 import Clients from 'sections/clients';
 import FeaturedSpace from 'sections/featured-space';
@@ -13,6 +13,7 @@ import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import AboutUS from 'sections/about-us';
 import ContactUS from 'sections/contact-us';
+import Quote from 'sections/quote';
 
 export default function IndexPage() {
   return (

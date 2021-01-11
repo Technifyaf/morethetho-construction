@@ -21,9 +21,10 @@ const ContactUS = () => {
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
             <Text as="p" sx={styles.desc}>
            <ul> Phone :  (+266) 53094658 </ul>
-           <ul>Adress : Ha Foso, </ul>
+           <ul>Address : Ha Foso, </ul>
            <ul>Email : sales@morethetho.co.ls</ul>
             </Text>
+            
             </Box>
           </Box>
         </Flex>
@@ -53,6 +54,11 @@ const styles = {
     alignItems: ['flex-start'],
     maxWidth: ['none', 'none', 'none', 'none', 480, 530, 760],
     m: ['50px 0 0', '50px 0 0', '50px 0 0', 0, '0 20px 0 0', '0 48px 0 0'],
+    img: {
+      borderRadius: 5,
+      transform: 'scale(1)',
+      transition: 'all 0.3s ease-in-out 0s',
+    },
   },
   rightContent: {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],

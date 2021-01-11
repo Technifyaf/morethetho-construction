@@ -2,10 +2,10 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/morethetho_about_us_2.jpg';
+import customer from 'assets/images/gallery/morethetho_gallery_3.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
-const AboutUS = () => {
+const AboutUS_Full = () => {
   return (
     <Box as="section" sx={styles.section} id ="about-us">
       <Container>
@@ -20,7 +20,23 @@ const AboutUS = () => {
               description="Morethetho Construction was established in 2009 as a general construction
               company in Lesotho. We diversified our business focus to underground Drilling in
               2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              Department of Water Affairs in Lesotho. 
+              
+              Morethetho Construction is situated at
+              Ha Foso-Marabeng on the along the Main North 1 road to TY
+              We have over 6 years’ experience in underground water drilling and related
+              services in Lesotho and our services are offered to residential, commercial,
+              agricultural, mining industry, construction and water supply projects for rural
+              communities. 
+
+              We offer a complete underground solution from borehole survey, drilling, casing,
+              pumping/ yield test, quality test, storage tanks and stand installation.
+              Our fleet of drilling rigs helps us to deliver timeous quality services to our
+              diversified customers
+
+              During the past 6 years our company has had the opportunity to drill throughout
+              the country in different district of Lesotho and therefore have a vast knowledge of
+              the varying underground formations in different areas. "
             />
            
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
@@ -36,7 +52,7 @@ const AboutUS = () => {
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
             <a
 						href='https://forms.gle/a4zRnRWchcUZaEG88'
-						ml={2}
+						ml={1}
 						label='Get Technified'
 						sx={styles.link}
 						variant='buttons.primary'
@@ -51,7 +67,7 @@ const AboutUS = () => {
   );
 };
 
-export default AboutUS;
+export default AboutUS_Full;
 
 const styles = {
   section: {
@@ -72,6 +88,11 @@ const styles = {
     alignItems: ['flex-start'],
     maxWidth: ['none', 'none', 'none', 'none', 480, 530, 760],
     m: ['50px 0 0', '50px 0 0', '50px 0 0', 0, '0 20px 0 0', '0 48px 0 0'],
+    img: {
+        borderRadius: 5,
+        transform: 'scale(0.9)',
+        transition: 'all 0.3s ease-in-out 0s',
+      },
   },
   rightContent: {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],

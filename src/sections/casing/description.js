@@ -1,25 +1,29 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Flex, Link , Button} from 'theme-ui';
+import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/features/2.jpg';
+import service from 'assets/images/features/2.jpg';
+import { FaAngleRight } from 'react-icons/fa';
 
-const OurCustomer = () => {
+const Casing_description = () => {
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" sx={styles.section} id ="about-us">
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" width="500" />
+            <Image loading="lazy" src={service} alt="service" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than a hundred happy customers."
-              description="We have installed more than 30 + wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka and ."
+              title="Casing"
+              description="Morethetho Construction was established in 2009 as a general construction
+              company in Lesotho. We diversified our business focus to underground Drilling in
+              2014 and therefore registered as a drilling contractor accredited by the
+              Department of Water Affairs in Lesotho. "
             />
-            <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-            <a
+           
+           <a
 						href='https://forms.gle/a4zRnRWchcUZaEG88'
 						ml={2}
 						label='Get Technified'
@@ -28,7 +32,6 @@ const OurCustomer = () => {
 					>
 					 <Button sx={styles.joinNow}>Request quotation</Button>
 					</a>
-            </Box>
           </Box>
         </Flex>
       </Container>
@@ -36,7 +39,7 @@ const OurCustomer = () => {
   );
 };
 
-export default OurCustomer;
+export default Casing_description;
 
 const styles = {
   section: {
@@ -57,12 +60,11 @@ const styles = {
     alignItems: ['flex-start'],
     maxWidth: ['none', 'none', 'none', 'none', 480, 530, 760],
     m: ['50px 0 0', '50px 0 0', '50px 0 0', 0, '0 20px 0 0', '0 48px 0 0'],
-
     img: {
-      borderRadius: 5,
-      transform: 'scale(1)',
-      transition: 'all 0.3s ease-in-out 0s',
-    },
+        borderRadius: 5,
+        transform: 'scale(1)',
+        transition: 'all 0.3s ease-in-out 0s',
+      },
   },
   rightContent: {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],

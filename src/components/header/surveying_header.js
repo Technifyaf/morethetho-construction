@@ -5,7 +5,7 @@ import { GrClose } from 'react-icons/gr';
 import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
-import menuItems from './header.data';
+import menuItems from './surveying_header.data';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -74,7 +74,6 @@ export default function Header() {
               ) : (
                 <MenuButton
                   aria-label="Toggle Menu"
-                  color  = "black"
                   onClick={toggleMobileMenu}
                 />
               )}
@@ -91,7 +90,7 @@ const styles = {
     backgroundColor: 'transparent',
     '.is-sticky': {
       header: {
-        backgroundColor: '#343D48',
+        backgroundColor: 'white',
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [10],
       },
@@ -115,7 +114,7 @@ const styles = {
       '.navbar': {
         position: 'absolute',
         top: '100%',
-        backgroundColor: '#343D48',
+        backgroundColor: '#E7B807',
         width: '100%',
         left: 0,
         p: '20px 30px',
@@ -156,10 +155,9 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: '0 20px',
-      color: 'white',
     },
     '.active': {
-    color: '#E7A807',
+      color: '#E7B807',
     },
   },
   joinNow: {

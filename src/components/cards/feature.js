@@ -8,19 +8,20 @@ import { FaAngleRight } from 'react-icons/fa';
 const Feature = ({ data: feature }) => {
   return (
     <Box key={feature.id} sx={styles.featureItem}>
-      <Image loading="lazy" src={feature.icon} alt={feature.title} />
-      <Heading as="h3">{feature.title}</Heading>
-      <Text as="p">{feature.description}</Text>
-      <a
-						href='https://forms.gle/a4zRnRWchcUZaEG88'
+        <a
+						href={feature.path}
 						ml={2}
 						label='Get Technified'
 						sx={styles.link}
 						variant='buttons.primary'
 					>
-			Learn more <FaAngleRight/>
+	       <Image loading="lazy" src={feature.icon} alt={feature.title} />
 					</a>
           
+     
+      <Heading as="h3">{feature.title}</Heading>
+     
+    
     </Box>
   );
 };
@@ -48,7 +49,7 @@ const styles = {
     },
     ':hover': {
       img: {
-        transform: 'scale(1.2)',
+        transform: 'scale(1.1)',
       },
     },
   },
