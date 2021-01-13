@@ -4,9 +4,8 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
 import mgc from 'assets/images/clients/mgc.png';
-import google from 'assets/images/clients/google.png';
-import paypal from 'assets/images/clients/paypal.png';
-import microsoft from 'assets/images/clients/microsoft.png';
+import puma from 'assets/images/clients/puma.png';
+import total from 'assets/images/clients/total.png';
 import dribbble from 'assets/images/clients/dribbble.png';
 import { textInputs } from 'polished';
 const clients = [
@@ -18,18 +17,14 @@ const clients = [
   {
     id: 2,
     name: 'Berea',
-    logo: google,
+    logo: puma,
   },
   {
     id: 3,
     name: 'Thaba Tseka',
-    logo: paypal,
+    logo: total,
   },
-  {
-    id: 4,
-    name: 'Quthing',
-    logo: microsoft,
-  },
+
 
 ];
 

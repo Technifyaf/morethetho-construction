@@ -55,7 +55,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: '#343D48',
+    backgroundColor: '#EEC11B',
   },
   content: {
     alignItems: 'center',

@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link , Button} from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/features/2.jpg';
+import customer from 'assets/images/features/map.png';
 
 const OurCustomer = () => {
   return (
@@ -10,7 +10,7 @@ const OurCustomer = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" width="500" />
+            <Image loading="lazy" src={customer} alt="customer" width="800" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
@@ -42,6 +42,8 @@ const styles = {
   section: {
     pt: [60, 60, 60, 60, 80, 9],
     pb: [30, 30, 6],
+    background: '#404040', // body background color
+
   },
   contentWrapper: {
     display: ['flex'],
@@ -68,6 +70,7 @@ const styles = {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],
   },
   heading: {
+    color: '#ffff',
     textAlign: ['center', 'center', 'center', 'left'],
     marginLeft: 0,
     maxWidth: 580,
@@ -78,6 +81,8 @@ const styles = {
       fontWeight: [500, 500, 500, 400],
     },
     p: {
+      color: '#ffff',
+
       fontSize: ['15px', '15px', '15px', '17px'],
       mt: [3, 3, 3, 20, 5],
     },

@@ -88,10 +88,10 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-    backgroundColor: 'transparent',
+    backgroundColor: '#fff',
     '.is-sticky': {
       header: {
-        backgroundColor: '#343D48',
+        backgroundColor: '#fff',
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [10],
       },
@@ -104,7 +104,7 @@ const styles = {
     py: [20],
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-mobile-menu': {
-      backgroundColor: '#fff',
+      backgroundColor: '#',
     },
   },
   headerInner: {
@@ -115,7 +115,7 @@ const styles = {
       '.navbar': {
         position: 'absolute',
         top: '100%',
-        backgroundColor: '#343D48',
+        backgroundColor: 'white',
         width: '100%',
         left: 0,
         p: '20px 30px',
@@ -156,10 +156,10 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       margin: '0 20px',
-      color: 'white',
+      color: '#404040',
     },
     '.active': {
-    color: '#E7A807',
+    color: '#EEC11B',
     },
   },
   joinNow: {

@@ -75,7 +75,7 @@ const styles = {
     minHeight: [null, null, null, null, '50vh', '100vh'],
   },
   bannerContent: {
-    backgroundColor: rgba('#fff', 0.63),
+    backgroundColor: rgba('#404040', 1),
     boxShadow: [
       '0px 10px 16px rgba(52, 61, 72, 0.12)',
       null,
@@ -103,6 +103,7 @@ const styles = {
   },
   heroTitle: {
     fontSize: [22, 28, 28, 40, , 5, 6],
+    color : '#fff',
     fontWeight: 700,
     letterSpacing: 'heading',
     lineHeight: [1.4, null, null, null, null, null, 1.57],
@@ -111,6 +112,7 @@ const styles = {
     },
   },
   desc: {
+    color : '#fff',
     fontSize: [15, 16, 15, 17],
     lineHeight: [1.53, 1.53, 1.53, 2, 2.4, 2, 2.48],
     maxWidth: 440,

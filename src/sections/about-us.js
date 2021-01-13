@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/morethetho_about_us_2.jpg';
+import customer from 'assets/images/morethetho_about_us_3.png';
 import { FaAngleRight } from 'react-icons/fa';
 
 const AboutUS = () => {
@@ -11,7 +11,7 @@ const AboutUS = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" />
+            <Image loading="lazy" src={customer}  alt="customer" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
@@ -57,8 +57,12 @@ const styles = {
   section: {
     pt: [60, 60, 60, 60, 80, 9],
     pb: [30, 30, 6],
+    background: '#404040', // body background color
+
+
   },
   contentWrapper: {
+
     display: ['flex'],
     alignItems: ['center'],
     flexDirection: [
@@ -75,6 +79,7 @@ const styles = {
   },
   rightContent: {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],
+   
   },
   heading: {
     textAlign: ['center', 'center', 'center', 'left'],
@@ -82,11 +87,13 @@ const styles = {
     maxWidth: 580,
     m: ['0 auto 27px', '0 auto 27px', '0 auto 27px', '0 0 30px'],
     h2: {
+      color : '#fff',
       fontSize: [22, 22, 22, 28, 30, 36, 46],
       lineHeight: [1.6, 1.6, 1.6, 1.41],
       fontWeight: [500, 500, 500, 400],
     },
     p: {
+      color : '#fff',
       fontSize: ['15px', '15px', '15px', '17px'],
       mt: [3, 3, 3, 20, 5],
     },

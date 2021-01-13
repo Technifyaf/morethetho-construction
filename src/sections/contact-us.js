@@ -19,7 +19,8 @@ const ContactUS = () => {
               description="Contact us by for phone or email or visit us at the adress below"
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-            <Text as="p" sx={styles.desc}>
+            <Text as="p" sx={styles.heading}>
+              
            <ul> Phone :  (+266)  58395014/63211226 </ul>
            <ul>Address : Ha Foso, </ul>
            <ul>Email : sales@morethetho.co.ls</ul>
@@ -39,6 +40,8 @@ const styles = {
   section: {
     pt: [60, 60, 60, 60, 80, 9],
     pb: [30, 30, 6],
+    background: '#404040', // body background color
+
   },
   contentWrapper: {
     display: ['flex'],
@@ -64,19 +67,26 @@ const styles = {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],
   },
   heading: {
+    color :'#ffff',
     textAlign: ['center', 'center', 'center', 'left'],
     marginLeft: 0,
     maxWidth: 580,
     m: ['0 auto 27px', '0 auto 27px', '0 auto 27px', '0 0 30px'],
     h2: {
+      color :'#ffff',
       fontSize: [22, 22, 22, 28, 30, 36, 46],
       lineHeight: [1.6, 1.6, 1.6, 1.41],
       fontWeight: [500, 500, 500, 400],
     },
     p: {
+      color :'#ffff',
       fontSize: ['15px', '15px', '15px', '17px'],
       mt: [3, 3, 3, 20, 5],
     },
+    ul :{
+      color :'#ffff',
+
+    }
   },
   link: {
     svg: {
