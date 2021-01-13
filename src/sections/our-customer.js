@@ -15,8 +15,8 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than a hundred happy customers."
-              description="We have installed more than 30 + wells and 50 boreholes in Maseru, Mohale'shoek, Maputsoe, Thaba Tseka and ."
+              title="We have more than 20 happy customers."
+              description="We have completed projects in in different districts of Lesotho including, Quthing, Mohales'Hoek, Mafeteng, Buthabute, Berea, Mokhotlong, and Thaba-Tseka "
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
             <a
