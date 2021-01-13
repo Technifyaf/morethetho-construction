@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import service from 'assets/images/features/2.jpg';
+import survey from 'assets/images/gallery/morethetho_gallery_6.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const Surveying_desription = () => {
@@ -11,16 +11,20 @@ const Surveying_desription = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={service} alt="service" />
+            <Image loading="lazy" src={survey} alt="service" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
               title="Surveying"
-              description="Morethetho Construction was established in 2009 as a general construction
-              company in Lesotho. We diversified our business focus to underground Drilling in
-              2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              description="
+              Traditional method: This is where a water wizard would do
+              borehole survey using two metal steel rods to identify the best spot
+              for drilling. The water wizard would analyse the geophysical
+              sounding like dykes, existence wetlands, springs and performance
+              of nearby boreholes to help identify the best spot.
+              The area under investigation has close proximity to a dyke on the
+              main entrance to the village"
             />
            
            <a

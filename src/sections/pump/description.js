@@ -16,11 +16,15 @@ const Pump_description = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Pump Installation"
-              description="Morethetho Construction was established in 2009 as a general construction
-              company in Lesotho. We diversified our business focus to underground Drilling in
-              2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              title="Pumping Test"
+              description="The test will be carried out to determine the borehole capacity and
+              sustainability. The 12 hour pumping and recovery test would be
+              carried out and provide a detailed report
+              Water quality test analysis will be conducted to verify the quality
+              of the underground water before consumption. The water sample is
+              taken to WASA or other independent analysis.
+              The quality of water is not responsibility of the driller hence the
+              application of drilling permit from relevant authority "
             />
            
            <a

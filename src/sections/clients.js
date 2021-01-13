@@ -88,7 +88,7 @@ const Clients = () => {
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Meet our clients"
+          slogan="Meet some of our clients"
           title="We have served a number of high profile clients"
         />
         <Slider sx={styles.clients} {...settings}>

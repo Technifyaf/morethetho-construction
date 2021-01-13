@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import service from 'assets/images/features/2.jpg';
+import testing from 'assets/images/gallery/casing.jpg'
 import { FaAngleRight } from 'react-icons/fa';
 
 const Yielding_description = () => {
@@ -11,16 +11,14 @@ const Yielding_description = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={service} alt="service" />
+            <Image loading="lazy" src={testing} alt="service" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
               title="Yielding"
-              description="Morethetho Construction was established in 2009 as a general construction
-              company in Lesotho. We diversified our business focus to underground Drilling in
-              2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              description="Test: It is done to determine the performance of the
+              borehole, pump size and the rate at which the borehole should be pumped "
             />
            
            <a

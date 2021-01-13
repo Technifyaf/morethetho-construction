@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import service from 'assets/images/features/2.jpg';
+import drilling from 'assets/images/gallery/morethetho_gallery_1.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const Drilling_description = () => {
@@ -11,16 +11,21 @@ const Drilling_description = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={service} alt="service" />
+            <Image loading="lazy" src={drilling} alt="service" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
               title="Drilling"
-              description="Morethetho Construction was established in 2009 as a general construction
-              company in Lesotho. We diversified our business focus to underground Drilling in
-              2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              description="The first 1-6/8 meters would be drilled using 8 inches tract bit or
+              button bit for open hole for steel casing. The steel casings would
+              be inserted to prevent collapse during drilling and contamination
+              coming from top water sources
+              The rest of the hole would be drilled using 6 inches button bit. The
+              hammer and bit we use would be able to penetrate all types of
+              formation found underground with the assistance of our high
+              pressure compressor. The compressor has 20 bar pressure with
+              23m3 of air delivery. "
             />
            
            <a

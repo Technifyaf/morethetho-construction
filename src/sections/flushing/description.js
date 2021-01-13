@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import service from 'assets/images/features/2.jpg';
+import flushing from 'assets/images/gallery/flushing.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const Flushing_description = () => {
@@ -11,16 +11,15 @@ const Flushing_description = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={service} alt="service" />
+            <Image loading="lazy" src={flushing} alt="service" />
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
               title="Flushing"
-              description="Morethetho Construction was established in 2009 as a general construction
-              company in Lesotho. We diversified our business focus to underground Drilling in
-              2014 and therefore registered as a drilling contractor accredited by the
-              Department of Water Affairs in Lesotho. "
+              description="After drilling the borehole we would conduct borehole flashing to
+              clean the borehole of all sediments. This is going to assist in easy
+              installation of casings. "
             />
            
            <a
