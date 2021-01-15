@@ -2,24 +2,31 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import drilling from 'assets/images/gallery/morethetho_gallery_1.jpg';
+import casing from 'assets/images/gallery/casing_2.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
-const Drilling_description = () => {
+const Supply_description = () => {
 	return (
 		<Box as='section' sx={styles.section} id='about-us'>
 			<Container>
 				<Flex sx={styles.contentWrapper}>
 					<Flex as='figure' sx={styles.illustration}>
-						<Image loading='lazy' src={drilling} alt='service' />
+						<Image loading='lazy' src={casing} alt='service' />
 					</Flex>
 					<Box sx={styles.rightContent}>
 						<SectionHeading
 							sx={styles.heading}
-							title='Borehole Drilling'
-							description='A borehole is a deep narrow hole or shaft drilled on the ground.  - We use rotary air drilling method to drill different diameter and depth. Our Machinery have a maximum capacity to drill 150m deep borehole.
-              '
+							title='Supply of borehole Materials:'
+							description='After the borehole drilling process is complete, different borehole materials will have to be 
+                            installed to pump the water out of the hole, preferably to the storage tanks, these entail:'
 						/>
+						<ul>
+							<li> Submersible Pumps and motor: </li>
+							<li> Jojo Tanks </li>
+							<li> Steel stand</li>
+							<li> Submersible Cable</li>
+							<li>Casings (Steel and UPVC)</li>
+						</ul>
 
 						<a
 							href='https://forms.gle/a4zRnRWchcUZaEG88'
@@ -37,7 +44,7 @@ const Drilling_description = () => {
 	);
 };
 
-export default Drilling_description;
+export default Supply_description;
 
 const styles = {
 	section: {

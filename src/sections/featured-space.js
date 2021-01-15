@@ -66,6 +66,13 @@ const data = {
 			description: 'Installation and maintenance',
 			path: '/services/pump',
 		},
+		{
+			id: 6,
+			icon: casing,
+			title: 'Supply',
+			description: 'Supply of borehole Materials',
+			path: '/services/supply',
+		},
 	],
 	gallery: [
 		{
@@ -137,7 +144,8 @@ const FeaturedSpace = () => {
 						<SectionHeading
 							sx={styles.heading}
 							title='Our services'
-							description='Our primary services are drilling services we have state of the art drilling equipment, thouroughly trained personnel and expert geologists.'
+							description='Morethetho Construction is a highly experienced borehole drilling company with thoroughly trained personnel and well maintained drilling equipment. We utilise modern survey equipment and portable drilling rigs that can manoeuvre in less accessible places.
+							'
 						/>
 						<Box sx={styles.featureWrapper}>
 							{data?.feature?.map((feature) => (
@@ -173,7 +181,6 @@ const styles = {
 		maxWidth: 490,
 		margin: ['0 auto 40px', null, null, null, '0 0 80px'],
 		h2: {
-
 			fontSize: [22, null, null, 30, null, 36, 46],
 			lineHeight: [1.6, null, null, 1.41],
 			fontWeight: [500, null, null, 400],

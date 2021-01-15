@@ -16,15 +16,10 @@ const Surveying_desription = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Surveying"
+              title="Borehole Survey"
               description="
-              Traditional method: This is where a water wizard would do
-              borehole survey using two metal steel rods to identify the best spot
-              for drilling. The water wizard would analyse the geophysical
-              sounding like dykes, existence wetlands, springs and performance
-              of nearby boreholes to help identify the best spot.
-              The area under investigation has close proximity to a dyke on the
-              main entrance to the village"
+              Geological survey is done using both traditional and scientific way to identify the right spot to drill 
+"
             />
            
            <a

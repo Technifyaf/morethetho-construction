@@ -44,10 +44,10 @@ export default function Banner() {
 							Your preferred drilling partner over the past 8 years
 						</Heading>
 						<Text as='p' sx={styles.desc}>
-							Morethetho Construction has been engaged in many projects
-							throughout Lesotho for the past 8 years. We have had an
-							opportunity to drill on different geological conditions for
-							boreholes and exploration of underground exploration.
+							Morethetho construction has been engaged in many projects in
+							Lesotho for the past 8 years. We have had an opportunity to drill
+							boreholes on various underground formations throughout Lesotho
+							hence we are your preferred choice.
 						</Text>
 
 						<a
