@@ -15,7 +15,7 @@ const OurCustomer = () => {
 					<Box sx={styles.rightContent}>
 						<SectionHeading
 							sx={styles.heading}
-							title="Your preferred drilling partner over the 8 years ''"
+							title='Your preferred drilling partner over the 8 years '
 							description='We have successfully completed project in every district of lesotho. The map shows a few places we have been.'
 						/>
 						<Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
