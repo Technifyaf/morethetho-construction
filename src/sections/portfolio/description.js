@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import service from 'assets/images/features/2.jpg';
+import service from 'assets/images/gallery/morethetho_gallery_3.jpg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const Portfolio = () => {
@@ -11,7 +11,7 @@ const Portfolio = () => {
 			<Container>
 				<Flex sx={styles.contentWrapper}>
 					<Flex as='figure' sx={styles.illustration}>
-						<Image loading='lazy' src={service} alt='service' />
+						<Image loading='lazy'src={service} alt='service' />
 					</Flex>
 					<Box sx={styles.rightContent}>
 						<SectionHeading

@@ -175,13 +175,12 @@ const styles = {
   
  
 	link: {
-		margin : 10,
 		textDecoration: 'none',
 		fontSize: [1, null, 2],
 		display: 'inline-block',
 		verticalAlign: 'middle',
 		fontWeight: 'bold',
-		pl: ['30px', null, null, '4px', null, '4px'],
+		pl: ['30px', null, null, 'px', null, '30px'],
 		mt: ['5px', null, null, null, '10px'],
 		svg: {
 			transition: 'margin-left 0.3s ease-in-out 0s',
