@@ -14,12 +14,18 @@ import Subscription from 'sections/subscription';
 import AboutUS from 'sections/about-us';
 import ContactUS from 'sections/contact-us';
 import Quote from 'sections/quote';
+import image from 'assets/images/gallery/flushing_2.jpeg'
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Morethetho Construction" />
+        <SEO title="Morethetho Construction"
+        titleSeparator={`-`}
+        description={'Your preffered drilling partner for over 8 years' || 'nothin’'}
+        image={image}
+        pathname= "www.morethetho.co.ls"
+       />
         <Banner />
      
         <FeaturedSpace />
