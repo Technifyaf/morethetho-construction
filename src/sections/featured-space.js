@@ -8,8 +8,9 @@ import Feature from 'components/cards/feature';
 import Image from 'components/image';
 import drilling from 'assets/images/gallery/morethetho_gallery_1.jpg';
 import survey from 'assets/images/gallery/morethetho_gallery_6.jpg';
-import casing from 'assets/images/gallery/casing_2.jpg';
-import flashing from 'assets/images/gallery/flushing.jpg';
+import casing from 'assets/images/gallery/casing_tall.jpg';
+import casing_2 from 'assets/images/gallery/casing_2.jpg';
+import flashing from 'assets/images/gallery/flushing_2.jpeg';
 import testing from 'assets/images/gallery/casing.jpg';
 import water from 'assets/images/gallery/water_pump.jpg';
 import slider1 from 'assets/images/features/1.jpg';
@@ -27,43 +28,43 @@ const data = {
 		{
 			id: 1,
 			icon: survey,
-			title: 'Borehole Survey',
+			title: 'Borehole survey',
 			description: 'Drilling and flashing.',
 			path: '/services/surveying',
 		},
 		{
 			id: 1,
 			icon: drilling,
-			title: 'Drilling',
+			title: 'Borehole drilling',
 			description: 'Borehole Drilling',
 			path: '/services/drilling',
 		},
 		{
 			id: 2,
 			icon: flashing,
-			title: 'Borehole Flushing',
+			title: 'Borehole flushing',
 			description: 'Surveying, casing, and yield casing',
 			path: '/services/flushing',
 		},
 		{
 			id: 3,
-			icon: casing,
-			title: 'Borehole Casing',
+			icon: casing_2,
+			title: 'Borehole casing',
 			description: 'Installation and maintenance',
 			path: '/services/casing',
 		},
 		{
 			id: 4,
 			icon: testing,
-			title: 'Borehole Yield Test',
+			title: 'Borehole yield test',
 			description: 'Installation and maintenance',
 			path: '/services/yielding',
 		},
 
 		{
 			id: 5,
-			icon: casing,
-			title: 'Supply of Materials',
+			icon: casing_2,
+			title: 'Supply of materials',
 			description: 'Supply of borehole Materials',
 			path: '/services/supply',
 		},

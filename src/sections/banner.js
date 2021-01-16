@@ -3,7 +3,7 @@ import { jsx, Box, Container, Heading, Text, Button, Input } from 'theme-ui';
 import { rgba } from 'polished';
 
 import Select from 'components/select';
-import bannerBg from 'assets/images/morethetho_banner.jpg';
+import bannerBg from 'assets/images/gallery/flashing.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
 
 const options = [

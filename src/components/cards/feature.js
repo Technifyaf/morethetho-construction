@@ -15,7 +15,7 @@ const Feature = ({ data: feature }) => {
 						sx={styles.link}
 						variant='buttons.primary'
 					>
-	       <Image loading="lazy" src={feature.icon} alt={feature.title} />
+	       <Image loading="lazy"  src={feature.icon} alt={feature.title}  />
 					</a>
           
      

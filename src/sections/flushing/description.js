@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Flex, Link, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
-import flushing from 'assets/images/gallery/flushing.jpg';
+import flushing from 'assets/images/gallery/flushing.jpeg';
 import { FaAngleRight } from 'react-icons/fa';
 
 const Flushing_description = () => {
@@ -11,7 +11,7 @@ const Flushing_description = () => {
 			<Container>
 				<Flex sx={styles.contentWrapper}>
 					<Flex as='figure' sx={styles.illustration}>
-						<Image loading='lazy' src={flushing} alt='service' />
+						<Image loading='lazy' width='400' src={flushing} alt='service' />
 					</Flex>
 					<Box sx={styles.rightContent}>
 						<SectionHeading
